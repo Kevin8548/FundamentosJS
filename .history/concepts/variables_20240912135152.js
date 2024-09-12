@@ -11,7 +11,3 @@ let name = "Francisco"; // declaracion e inicializacion
 console.log(name);
 name = "Paco";
 console.log(name);
-
-// constantes const: no cambiaran de valor
-const PI = 3.1416;
-console.log(PI)
