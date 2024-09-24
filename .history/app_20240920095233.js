@@ -6,33 +6,33 @@ const eightball = () => {
     // TODO
     // crear numero aleatorio (0-8)
     // switch/case para mensajes distintos
-    const phrase = Math.floor(Math.random() * 8);
-    switch(phrase){
-        case 0:
-    message.innerText = "Si"
+    const day = Math.floor(Math.random() * 7);
+switch(day){
+    case 0:
+    console.log("Es Domingo ")
     break;
     case 1:
-    message.innerText = "No"
+    console.log("Es Lunes ")
     break;
     case 2:
-    message.innerText = "Gatu "
+    console.log("Es Martes ")
     break;
     case 3:
-    message.innerText = "Los gatos son mejores"
+    console.log("Es Miercoles ")
     break;
     case 4:
-    message.innerText = "Si pasara"
+    console.log("Es Jueves ")
     break;
     case 5:
-    message.innerText = "Ni en sueños"
+    console.log("Es Viernes ")
     break;
     case 6:
-    message.innerText = "Tal vez"
+    console.log("Es Sabado ")
     break;
-    case 7:
-    message.innerText = "Jamas"
-    break;
-    }
+    default:
+        console.log("El día no es valido")
+}
+    message.innerText = "Le diste click! waos"
 }
 
 ball.addEventListener('click', eightball);

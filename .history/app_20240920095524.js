@@ -9,30 +9,28 @@ const eightball = () => {
     const phrase = Math.floor(Math.random() * 8);
     switch(phrase){
         case 0:
-    message.innerText = "Si"
+    console.log("Si ")
     break;
     case 1:
-    message.innerText = "No"
+    console.log("No ")
     break;
     case 2:
-    message.innerText = "Gatu "
+    console.log("Nel ")
     break;
     case 3:
-    message.innerText = "Los gatos son mejores"
+    console.log("Perro ")
     break;
     case 4:
-    message.innerText = "Si pasara"
+    console.log("Gato ")
     break;
     case 5:
-    message.innerText = "Ni en sueños"
+    console.log("If ")
     break;
     case 6:
-    message.innerText = "Tal vez"
-    break;
-    case 7:
-    message.innerText = "Jamas"
+    message.innerText = "Le diste click! wacfvhjos"
     break;
     }
+    message.innerText = "Le diste click! waos"
 }
 
 ball.addEventListener('click', eightball);

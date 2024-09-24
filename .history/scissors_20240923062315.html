@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijeras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Piedra, Papel o Tijeras</h1>
+        <div class="parent">
+            <div class="div1">
+                <button id="playBtn">Play</button>
+            </div>
+
+            <div class="div2">
+                <h1>Tu</h1>
+                <div class="choices">
+                    <img src="img/piedra.jpeg" alt="Piedra" class="choice" data-choice="piedra">
+                    <img src="img/tijera.webp" alt="Tijeras" class="choice" data-choice="tijeras">
+                    <img src="img/papel.png" alt="Papel" class="choice" data-choice="papel">
+                </div>
+                <img id="userChoiceImage" src="" alt="Selección del usuario" style="display: none;">
+            </div>
+
+            <div class="div3"><h1>vs</h1></div>
+
+            <div class="div4">
+                <h1>PC</h1>
+                <img src="img/2775.png" alt="Selección de la máquina" style="display: none;">
+            </div>
+
+            <div class="div5" id="result"></div>
+        </div>
+    </div>
+    <script src="./concepts/scissors.js"></script>
+</body>
+</html>

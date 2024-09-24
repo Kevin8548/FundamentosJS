@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundamentos JavaScript</title>
+    <title>Document</title>
     <style>
-        body{
+        div{
+            body{
             margin:0;
             padding:0;
             display:grid;
@@ -17,23 +18,33 @@
         div{
             width: 300px;
             height: 300px;
-            border-radius:50%;
-            border:10px solid black ;
             display: grid;
             place-items: center;
-            background-color: black;
+            background-color: rgb(8, 246, 202);
             cursor: pointer;
         }
         h1{
             text-align: center;
-            color:cyan
+        }
+        .parent {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 2 / 2 / 5; }
+.div2 { grid-area: 2 / 1 / 5 / 3; }
+.div3 { grid-area: 5 / 2 / 6 / 5; }
+.div4 { grid-area: 2 / 4 / 5 / 6; }
+.div5 { grid-area: 3 / 3 / 4 / 4; }
         }
     </style>
 </head>
 <body>
-    <div>
-        <h1>Bola magica</h1>
-    </div>
-    <script src="./app.js"></script>
+    <div class="content"></div>
+    <script src="./concepts/scissors.js"></script>
+    <div>Si</div>
 </body>
 </html>
