@@ -34,3 +34,13 @@ button {
     height: 40px;
     cursor: pointer;
 }
+
+.a{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    position:relative;
+    top: 50%;
+    margin-top: 30px;
+    margin-left: 420px;
+}
